@@ -4,7 +4,7 @@ If you are running the 3.y.y kernel then please use the master branch
 
 ### What does it do?
 
-Makes Odroid XU4 fan silent on idle load and quite on medium load
+Makes Odroid XU3/4 fan silent on idle load and quite on medium load
 
 ### Is it safe to use?
 
@@ -13,7 +13,7 @@ When script quits it brings fan mode back to *automatic* "factory" settings.
 ## Usage
 ``` 
 sudo apt-get install git
-git clone https://github.com/f1vefour/odroid-xu4-fan-control.git
+git clone https://github.com/hismethod/odroid-xu4-fan-control.git
 cd odroid-xu4-fan-control
 chmod +x odroid-xu4-fan-control.sh
 sudo ./odroid-xu4-fan-control.sh
