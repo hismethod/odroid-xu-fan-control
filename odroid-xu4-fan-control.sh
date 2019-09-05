@@ -67,13 +67,13 @@ do
   elif (( ${current_max_temp} >= 63000 )); then
     new_fan_speed=80
   elif (( ${current_max_temp} >= 60000 )); then
-    new_fan_speed=0
+    new_fan_speed=65
   elif (( ${current_max_temp} >= 58000 )); then
-    new_fan_speed=0
+    new_fan_speed=65
   elif (( ${current_max_temp} >= 55000 )); then
-    new_fan_speed=0
+    new_fan_speed=65
   else
-    new_fan_speed=0
+    new_fan_speed=65
   fi
   ${DEBUG} && logger -t $LOGGER_NAME "event: adjust; speed: ${new_fan_speed}"
   echo ${new_fan_speed} > ${FAN_SPEED_FILE}
